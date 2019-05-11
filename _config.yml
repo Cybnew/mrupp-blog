@@ -28,6 +28,11 @@ markdown: kramdown
 remote_theme: "mmistakes/so-simple-theme"
 plugins:
   - jekyll-feed
+mathjax: true
+
+read_time: true
+words_per_minute: 200
+search_full_content: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
