@@ -14,9 +14,9 @@
   
 
   
-    <title>About</title>
-    <meta name="description" content="Keeping It Real Since 1988.">
-    <link rel="canonical" href="https://cybnew.github.io/mrupp-blog//about/">
+    <title>Hello jQuery</title>
+    <meta name="description" content="Thursday">
+    <link rel="canonical" href="https://cybnew.github.io/mrupp-blog//progress/2017/10/26/Hello-jQuery.html">
   
 
   <script>
@@ -37,7 +37,7 @@
 </head>
 
 
-  <body class="layout--page  about">
+  <body class="layout--post  hello-jquery">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -64,30 +64,98 @@
 
 
     <main id="main" class="main-content" aria-label="Content">
-  <article>
+  <article class="h-entry">
     
 
     <div class="page-wrapper">
       <header class="page-header">
         
         
-          <h1 id="page-title" class="page-title">About</h1>
+          <h1 id="page-title" class="page-title p-name">Hello jQuery
+</h1>
         
       </header>
-      <div class="page-content">
-        <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><div class="author-info">
+    <time class="page-date dt-published" datetime="2017-10-26T21:45:01-07:00"><a class="u-url" href="">October 26, 2017</a>
+</time>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+  </div>
+</div>
 
+        
+  <h3 class="page-taxonomies-title">Categories</h3>
+  <ul class="page-taxonomies"><li class="page-taxonomy">progress</li>
+  </ul>
 
 
         
+
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <h1 id="thursday">Thursday</h1>
+
+<h2 id="ohhello-there">Oh…hello there…</h2>
+
+<p>Been working with jQuery this week…and I like it. It makes things much faster!</p>
+
+<p>Apparently “you don’t need jQuery” according to some people…and I will agree…in some situations you shouldn’t use jQuery…I mean…you can accomplish anything you want with Vanilla JS..but I can also walk to work every day, yet I drive…because it makes me WAY faster. For example….</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var buttons = document.querySelectorAll("button");
+
+for (var i = 0; i &lt; buttons.length; i++){
+	buttons[i].addEventListener("click", function(){
+		this.style.backgroundColor("purple")
+	}
+	)};
+}
+
+</code></pre></div></div>
+
+<p>Can be written as…</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$("button").on("click", function(){
+	this.css("background","purple")
+	})
+</code></pre></div></div>
+
+<p>So much easier right???!?!?</p>
+
+<p>Anyway…tomorrow I start my first todo project…built with HTML, CSS, and JS/jQuery.</p>
+
+<p>-Mat</p>
+
+        </div>
+
+        
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+    <a class="page-previous" href="/progress/2017/10/22/We-have-completion..html">
+      <h4 class="page-pagination-label">Previous</h4>
+      <span class="page-pagination-title">
+        <i class="fas fa-arrow-left"></i> We Have Completion
+
+      </span>
+    </a>
+  
+
+  
+    <a class="page-next" href="/progress/2017/10/30/New-Todo.html">
+      <h4 class="page-pagination-label">Next</h4>
+      <span class="page-pagination-title">
+        New To-Do
+ <i class="fas fa-arrow-right"></i>
+      </span>
+    </a>
+  
+</nav>
+
       </div>
     </div>
   </article>
