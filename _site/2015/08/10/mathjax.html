@@ -14,9 +14,9 @@
   
 
   
-    <title>Mathjax</title>
-    <meta name="description" content="">
-    <link rel="canonical" href="https://cybnew.github.io/mrupp-blog//2019/05/05/mathjax.html">
+    <title>MathJax Example</title>
+    <meta name="description" content="bananas is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the...">
+    <link rel="canonical" href="https://cybnew.github.io/mrupp-blog//2015/08/10/mathjax.html">
   
 
   <script>
@@ -37,7 +37,7 @@
 </head>
 
 
-  <body class="layout--post  mathjax">
+  <body class="layout--post  mathjax-example">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -71,7 +71,7 @@
       <header class="page-header">
         
         
-          <h1 id="page-title" class="page-title p-name">Mathjax
+          <h1 id="page-title" class="page-title p-name">MathJax Example
 </h1>
         
       </header>
@@ -81,7 +81,7 @@
 
 <span class="read-time">~1 min read</span>
 
-    <time class="page-date dt-published" datetime="2019-05-05T00:00:00-07:00"><a class="u-url" href="">May 5, 2019</a>
+    <time class="page-date dt-published" datetime="2015-08-10T05:08:50-07:00"><a class="u-url" href="">August 10, 2015</a>
 </time>
 
   </div>
@@ -95,7 +95,25 @@
 
       <div class="page-content">
         <div class="e-content">
-          
+          <p>bananas is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics <code class="highlighter-rouge">\[ ... \]</code>, and the other for inline mathematics <code class="highlighter-rouge">\( ... \)</code>.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>To enable MathJax support be sure Kramdown is your Markdown flavor of choice and MathJax is set to true in your <code class="highlighter-rouge">_config.yml</code> file.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">mathjax</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<script type="math/tex; mode=display">a^2 + b^2 = c^2</script>
+
+<p>Here is an example MathJax inline rendering \( 1/x^{2} \), and here is a block rendering:</p>
+
+<p>\[ \frac{1}{n^{2}} \]</p>
+
+<p>The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become <code class="highlighter-rouge">\\[ ... \\]</code> and <code class="highlighter-rouge">\\( ... \\)</code> for inline and block maths respectively.</p>
+
+<script type="math/tex; mode=display">\mathbf{X}\_{n,p} = \mathbf{A}\_{n,k} \mathbf{B}\_{k,p}</script>
 
         </div>
 
