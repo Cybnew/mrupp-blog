@@ -64,7 +64,7 @@ defaults:
       share: true
 
 # Site Author
-author:
+author: 
   name: Mathew Rupp
   picture: /images/IMG-1995.jpg
   email: mathewrupp@gmail.com
