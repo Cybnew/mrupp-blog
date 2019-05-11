@@ -24,8 +24,8 @@ github_username:  Cybnew
 
 # Build settings
 markdown: kramdown
-#theme: minima
-remote_theme: "mmistakes/so-simple-theme"
+theme: jekyll-theme-so-simple
+#remote_theme: "mmistakes/so-simple-theme"
 
 locale: en-US
 plugins:
